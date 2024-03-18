@@ -1,0 +1,92 @@
+      {
+        "materialName": "工具钢",
+        "materialFeatures": [
+          {
+            "featureName": "模具钢1.2709-SLM （3D打印）",
+            "featureAlternativeName": "MS1(人工)",
+            "pricingRange": "$",
+            "productionPriceRange": "$",
+            "featureCharacter": "高强度,高韧性,焊接性优异,热塑性优异",
+            "featureUtility": "--"
+          },
+          {
+            "featureName": "模具钢CX-SLM （3D打印）",
+            "featureAlternativeName": "模具钢CX",
+            "pricingRange": "$",
+            "productionPriceRange": "$",
+            "featureCharacter": "耐腐蚀,高强度,高硬度",
+            "featureUtility": "--"
+          },
+          {
+            "featureName": "1,173",
+            "featureAlternativeName": "C45U",
+            "pricingRange": "2$",
+            "productionPriceRange": "1$",
+            "featureCharacter": "耐磨,机械加工性能良好",
+            "featureUtility": "用于需要坚硬表面和坚韧芯材的应用"
+          },
+          {
+            "featureName": "1,2083",
+            "featureAlternativeName": "X40Cr14",
+            "pricingRange": "3$",
+            "productionPriceRange": "4$",
+            "featureCharacter": "耐磨",
+            "featureUtility": "用于制造腐蚀性塑料的模具"
+          },
+          {
+            "featureName": "1,221",
+            "featureAlternativeName": "115CrV3",
+            "pricingRange": "4$",
+            "productionPriceRange": "2$",
+            "featureCharacter": "易加工,耐磨,高强度,高硬度",
+            "featureUtility": "用于强度、硬度要求较高的部件"
+          },
+          {
+            "featureName": "1,2312",
+            "featureAlternativeName": "40CrMnMoS8-6",
+            "pricingRange": "3$",
+            "productionPriceRange": "3$",
+            "featureCharacter": "氮化性能良好,机械加工性能良好,耐磨, 注：抛光性和蚀刻性有限",
+            "featureUtility": "用于工具和模具制造"
+          },
+
+          {
+            "featureName": "1,2379",
+            "featureAlternativeName": " X153CrMoV12",
+            "pricingRange": "4$",
+            "productionPriceRange": "4$",
+            "featureCharacter": "高耐磨性,高强度,高硬度",
+            "featureUtility": "用于制造工具"
+          },
+          {
+            "featureName": "1,2842",
+            "featureAlternativeName": " 90MnCrV8",
+            "pricingRange": "3$",
+            "productionPriceRange": "4$",
+            "featureCharacter": "高耐磨性,高硬度",
+            "featureUtility": "用于包括模具、冲压工具、拉丝冲头、拉刀、衬套、车床、卡盘爪"
+          },
+          {
+            "featureName": "1,3505",
+            "featureAlternativeName": " 100Cr6",
+            "pricingRange": "3$",
+            "productionPriceRange": "3$",
+            "featureCharacter": "高耐磨性,高硬度",
+            "featureUtility": "用于机械工程中易磨损的零件"
+          }
+        ]
+      },
+      {
+        "materialName": "铸铁",
+        "materialFeatures": [
+          {
+            "featureName": "铸铁 0.6025",
+            "featureAlternativeName": "EN-GJL-250",
+            "pricingRange": "4$",
+            "productionPriceRange": "2$",
+            "featureCharacter": "导热性良好,耐磨性优异",
+            "featureUtility": "--"
+          }
+        ],
+        "name": "plastic"
+      },
