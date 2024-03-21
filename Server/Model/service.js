@@ -3,6 +3,7 @@ import fs from "node:fs";
 import mysql from "mysql2/promise";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
+import { error } from "node:console";
 console.log(typeof process.env.MYSQLPASSWORD, process.env.MYSQLUSER);
 const config = {
   host: process.env.MYSQLHOST,
@@ -22,22 +23,22 @@ export class ServiceModel {
     //verificar el codigo de verificacion
     try {
       const [querydata, a] = await connection.query(
-        "SELECT phone, codigo FROM verify WHERE phone = ?",
+        "SELECT phone, codigo FROM tokens WHERE phone = ?",
         [phone]
       );
-
+      if (!querydata) {
+        throw new error("No se ha podido enviar el codigo");
+      }
       const inputUser = verifyCode;
       const [codeValidate] = querydata.filter((data) => {
         const code = data.codigo;
         //comparar codigos
         const isValid = bcrypt.compareSync(inputUser, code);
-        if (isValid) return data;
-        return false;
+        if (!isValid) {
+          throw new error("Codigo invalido");
+        }
+        return data;
       });
-
-      if (!codeValidate) {
-        return false;
-      }
 
       const [userData, _] = await connection.query(
         "SELECT * FROM usuarios WHERE phone = ?",
@@ -47,10 +48,7 @@ export class ServiceModel {
 
       const userPhone = data?.phone;
       if (!userPhone) {
-        return false;
-        // return res.status(400).json({
-        //   message: "No se ha encontrado un usuarion con este Numero de phone",
-        // });
+        throw new error("Numero de telefono no encontrado");
       }
       const changePassword = await connection.query(
         "UPDATE  usuarios SET password = ? WHERE phone = ?",
@@ -90,6 +88,7 @@ export class ServiceModel {
       const [user] = userInfo[0];
 
       if (!user) {
+        throw new error("Usuario no encontrado");
         return false;
       }
       const userForToken = {
@@ -116,7 +115,7 @@ export class ServiceModel {
     //manerjar el error
     try {
       const [querdata, _] = await connection.query(
-        "SELECT phone, codigo FROM verify WHERE phone = ?",
+        "SELECT phone, codigo FROM tokens WHERE phone = ?",
         [phone]
       );
 
