@@ -45,11 +45,6 @@
             "name": "尼龙",
             "attribute": "尼龙材料具有高强度和耐磨性，绝缘性能、耐高温和耐化学腐蚀性。",
             "description": "广泛应用于工业材料如轴承、赤龙、垫片、密封件，汽车和航空航天，电子和电气设备"
-          },
-          {
-            "name": "POM 聚甲醛 C9021",
-            "attribute": "具有刚性高，硬度高、韧性;良好的耐溶剂、耐燃料化学性强、耐碱性以及良好的耐水解性;高抗热和氧化降解",
-            "description": "广泛应用于汽车工程、精密、工程、电气、电子工业、电器"
           }
         ],
         "custom": "Custom aluminium alloys are also available"
@@ -63,11 +58,6 @@
             "name": "去毛刺",
             "attribute": "去除工件上由于机加工产生的毛刺和锐边。",
             "description": "使表面光滑、延长零件寿命"
-          },
-          {
-            "name": "清洗",
-            "attribute": "使用化学或物理方法去除工件表面的油污、切削液和其他杂质",
-            "description": "提高产品的外观质量和使用性能"
           }
         ],
         "custom": "Custom aluminium alloys are also available"
@@ -131,11 +121,6 @@
             "name": "喷砂",
             "attribute": "用砂粒冲击工件表面，以清理或产生特定的表面纹理",
             "description": "--"
-          },
-          {
-            "name": "滚压",
-            "attribute": "用滚轮对表面进行压光，提高表面光洁度和尺寸精度",
-            "description": "--"
           }
         ],
         "custom": "Custom aluminium alloys are also available"
@@ -146,37 +131,6 @@
           {
             "name": "电镀",
             "attribute": "如镀锌、镀铬等，提供一层防腐蚀的金属层",
-            "description": "--"
-          },
-          {
-            "name": "化学氧化",
-            "attribute": "如发黑处理，使金属表面形成一层致密的氧化膜。",
-            "description": "如发黑处理，使金属表面形成一层致密的氧化膜。"
-          },
-          {
-            "name": "阳极氧化",
-            "attribute": "针对铝合金，形成一层硬而厚的氧化膜。",
-            "description": "提高其硬度和耐磨性"
-          }
-        ],
-        "custom": "Custom aluminium alloys are also available"
-      },
-      {
-        "name": "特殊处理",
-        "Features": [
-          {
-            "name": "激光处理",
-            "attribute": "用于打标或切割以及改善材料表面的力学性能和物理性能，以及提高零件的耐磨、耐蚀、耐疲劳性能",
-            "description": "--"
-          },
-          {
-            "name": "等离子处理",
-            "attribute": "最有效的对表面进行清洗、活化和涂层的处理工艺之一",
-            "description": "--"
-          },
-          {
-            "name": "真空处理",
-            "attribute": "如真空镀膜，提供高质量、高纯度的涂层",
             "description": "--"
           }
         ],
@@ -685,6 +639,893 @@
           }
         ],
         "name": "plastic"
+      },
+      {
+        "materialName": "铸铁",
+        "materialFeatures": [
+          {
+            "featureName": "铸铁 0.6025",
+            "featureAlternativeName": "EN-GJL-250",
+            "pricingRange": "4$",
+            "productionPriceRange": "2$",
+            "featureCharacter": "导热性良好,耐磨性优异",
+            "featureUtility": "--"
+          }
+        ],
+        "name": "hierro"
+      },
+      {
+        "materialName": "工具钢",
+        "materialFeatures": [
+          {
+            "featureName": "1,173",
+            "featureAlternativeName": "C45U",
+            "pricingRange": "2$",
+            "productionPriceRange": "1$",
+            "featureCharacter": "耐磨,机械加工性能良好",
+            "featureUtility": "用于需要坚硬表面和坚韧芯材的应用"
+          },
+          {
+            "featureName": "1,2083",
+            "featureAlternativeName": "X40Cr14",
+            "pricingRange": "3$",
+            "productionPriceRange": "4$",
+            "featureCharacter": "耐磨",
+            "featureUtility": "用于制造腐蚀性塑料的模具"
+          },
+          {
+            "featureName": "1,221",
+            "featureAlternativeName": "115CrV3",
+            "pricingRange": "4$",
+            "productionPriceRange": "2$",
+            "featureCharacter": "易加工,耐磨,高强度,高硬度",
+            "featureUtility": "用于强度、硬度要求较高的部件"
+          },
+          {
+            "featureName": "1,2312",
+            "featureAlternativeName": "40CrMnMoS8-6",
+            "pricingRange": "3$",
+            "productionPriceRange": "3$",
+            "featureCharacter": "氮化性能良好,机械加工性能良好,耐磨, 注：抛光性和蚀刻性有限",
+            "featureUtility": "用于工具和模具制造"
+          },
+
+          {
+            "featureName": "1,2379",
+            "featureAlternativeName": " X153CrMoV12",
+            "pricingRange": "4$",
+            "productionPriceRange": "4$",
+            "featureCharacter": "高耐磨性,高强度,高硬度",
+            "featureUtility": "用于制造工具"
+          },
+          {
+            "featureName": "1,2842",
+            "featureAlternativeName": " 90MnCrV8",
+            "pricingRange": "3$",
+            "productionPriceRange": "4$",
+            "featureCharacter": "高耐磨性,高硬度",
+            "featureUtility": "用于包括模具、冲压工具、拉丝冲头、拉刀、衬套、车床、卡盘爪"
+          },
+          {
+            "featureName": "1,3505",
+            "featureAlternativeName": " 100Cr6",
+            "pricingRange": "3$",
+            "productionPriceRange": "3$",
+            "featureCharacter": "高耐磨性,高硬度",
+            "featureUtility": "用于机械工程中易磨损的零件"
+          }
+        ],
+        "name": "tool"
+      }
+    ],
+    "materialsInfo_en": [
+      {
+        "materialName": "aluminum",
+        "materialFeatures": [
+          {
+            "featureName": "6061 aluminum",
+            "pricingRange": "$",
+            "productionPriceRange": "$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "High strength, corrosion-resistant, high toughness, good weldability",
+            "featureUtility": "Used in building structures, automotive parts, etc."
+          },
+          {
+            "featureName": "6060 aluminum",
+            "pricingRange": "3$",
+            "productionPriceRange": "1$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Corrosion-resistant, unaffected by weather",
+            "featureUtility": "Used in engineering applications with no special strength requirements, such as lighting, furniture, flooring, etc."
+          },
+          {
+            "featureName": "Aluminum alloy 6082",
+            "pricingRange": "1$",
+            "productionPriceRange": "1$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Corrosion-resistant, good weldability and thermal conductivity",
+            "featureUtility": "Used in transportation and structural engineering industries"
+          },
+          {
+            "featureName": "Aluminum alloy 2A12",
+            "featureAlternativeName": "none",
+            "pricingRange": "$",
+            "productionPriceRange": "$",
+            "featureCharacter": "High strength, good weldability",
+            "featureUtility": "Used in aircraft frames, fuselages, automotive bodies, engines, etc."
+          },
+          {
+            "featureName": "MIC-6",
+            "pricingRange": "$",
+            "productionPriceRange": "$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "High strength, easy to process, corrosion-resistant, good weldability",
+            "featureUtility": "Used in aircraft parts, camera lenses, couplings, naval components, etc."
+          },
+          {
+            "featureName": "7075 aluminum",
+            "pricingRange": "5$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "High strength, corrosion-resistant, excellent machinability, good mechanical performance",
+            "featureUtility": "Used in aerospace, mold processing, mechanical equipment, tooling and fixtures"
+          },
+          {
+            "featureName": "EN AW-2007/2030|AlCuMgPb",
+            "pricingRange": "1$",
+            "productionPriceRange": "1$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Corrosion-resistant, unaffected by weather",
+            "featureUtility": "Used in aircraft components, gears and shafts, fuse parts, instrument shafts and gears, etc."
+          },
+          {
+            "featureName": "EN AW-2017|AlCuMg1",
+            "pricingRange": "2$",
+            "productionPriceRange": "1$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Corrosion-resistant, unaffected by weather",
+            "featureUtility": "Used in rivets, general mechanical parts, structural parts of transport tools, etc."
+          },
+          {
+            "featureName": "EN AW-5083|AlMg4,5Mn0,7",
+            "pricingRange": "2$",
+            "productionPriceRange": "2$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Corrosion-resistant, naturally hard, good weldability, unaffected by weather",
+            "featureUtility": "Used in automotive, aircraft welding parts, drilling equipment, etc."
+          },
+          {
+            "featureName": "EN AW-5754|AlMg3",
+            "pricingRange": "3$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Corrosion-resistant, naturally hard, good weldability",
+            "featureUtility": "Used in welded structures, storage tanks, pressure vessels, etc."
+          },
+          {
+            "featureName": "EN AW-7019|AlZn4Mg2Mn",
+            "pricingRange": "5$",
+            "productionPriceRange": "2$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "High strength, corrosion-resistant",
+            "featureUtility": "Used in aerospace industry, blow molding (bottle) molds, ultrasonic plastic welding molds, etc."
+          },
+          {
+            "featureName": "EN AW-7021|AlZn5,5Mg1,5",
+            "pricingRange": "5$",
+            "productionPriceRange": "2$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "High strength, corrosion-resistant",
+            "featureUtility": "Used in manufacturing aircraft equipment, everyday items, architectural doors and windows, etc."
+          }
+        ],
+        "name": "Aluminum"
+      },
+
+      {
+        "materialName": "steel",
+        "materialFeatures": [
+          {
+            "featureName": "Q235A",
+            "pricingRange": "2$",
+            "productionPriceRange": "2$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Toughness, plasticity, good weldability",
+            "featureUtility": "Used for various welded structural components, common mechanical parts, etc."
+          },
+          {
+            "featureName": "C45",
+            "pricingRange": "2$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "none",
+            "featureCharacter": "High strength, easy to cut",
+            "featureUtility": "Used for parts requiring high strength, such as gears, shafts, piston pins, etc."
+          },
+          {
+            "featureName": "42CrMoS4",
+            "pricingRange": "4$",
+            "productionPriceRange": "4$",
+            "featureAlternativeName": "EN-ISO 683-2-2018",
+            "featureCharacter": "High strength, toughness, good quenching ability",
+            "featureUtility": "Used for locomotive traction large gears, turbocharger transmission gears, heavily loaded connecting rods, etc."
+          },
+          {
+            "featureName": "16CrMnH",
+            "pricingRange": "3$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "DIN EN-10084-2008",
+            "featureCharacter": "Quenching ability, good machinability",
+            "featureUtility": "Used after carburizing and quenching, mainly used for manufacturing gears, worms, seal sleeves, etc."
+          },
+          {
+            "featureName": "Cr12",
+            "pricingRange": "$",
+            "productionPriceRange": "$",
+            "featureAlternativeName": "steel 1.2080|DIN x210Cr12",
+            "featureCharacter": "Good quenching ability, good wear resistance",
+            "featureUtility": "Used for highly wear-resistant cold punching dies and punches, cold cutting scissors, drill bushes, etc."
+          },
+          {
+            "featureName": "High carbon chromium bearing steel GCr15",
+            "pricingRange": "1$",
+            "productionPriceRange": "1$",
+            "featureAlternativeName": "",
+            "featureCharacter": "High strength, high hardness, wear resistance, good hot working performance",
+            "featureUtility": "Used for steel balls, rollers, and shaft sleeves on drive shafts in internal combustion engines, motor vehicles, machine tools, drilling machines, and mining machinery, etc."
+          },
+          {
+            "featureName": "S355J2G3",
+            "pricingRange": "2$",
+            "productionPriceRange": "2$",
+            "featureAlternativeName": "EN-10025-2",
+            "featureCharacter": "Corrosion-resistant, high strength, toughness, plasticity, good weldability",
+            "featureUtility": "Used for heavy-duty mechanical equipment, mining machinery, etc."
+          },
+          {
+            "featureName": "11SMn309SMn29",
+            "pricingRange": "1$",
+            "productionPriceRange": "1$",
+            "featureAlternativeName": "EN-10277-3-1999",
+            "featureCharacter": "High strength, high hardness, good machinability",
+            "featureUtility": "Used for mechanical manufacturing, automation equipment, and high-precision parts manufacturing, etc."
+          },
+          {
+            "featureName": "11SMnPb379SMnPb36",
+            "pricingRange": "1$",
+            "productionPriceRange": "1$",
+            "featureAlternativeName": "EN-10277-2018",
+            "featureCharacter": "High wear resistance, good machinability",
+            "featureUtility": "Used for the manufacture of automation equipment, vehicles, machine tools, electronic equipment, and aerospace equipment, etc."
+          },
+          {
+            "featureName": "C60E1.1221",
+            "pricingRange": "3$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "EN-10277-2018EN-10132-4",
+            "featureCharacter": "High strength, high hardness, high elasticity",
+            "featureUtility": "Used for manufacturing machinery parts requiring high strength, hardness, and wear resistance, such as shafts, pins, gears, bolts, etc."
+          },
+          {
+            "featureName": "Q235B",
+            "pricingRange": "1$",
+            "productionPriceRange": "2$",
+            "featureAlternativeName": "EN-S235JRDIN St 37",
+            "featureCharacter": "High strength, high toughness, excellent machinability",
+            "featureUtility": "Used for ship, vehicle structural parts, manufacturing various tools, blades, molds and gauges, etc."
+          },
+          {
+            "featureName": "S355JRSt 52",
+            "pricingRange": "1$",
+            "productionPriceRange": "2$",
+            "featureAlternativeName": "EN-10025",
+            "featureCharacter": "High strength, corrosion-resistant, high yield strength, high tensile strength",
+            "featureUtility": "Used for support structures, ship hulls, ship equipment, etc."
+          }
+        ],
+        "name": "steel"
+      },
+
+      {
+        "materialName": "stainless steel",
+        "materialFeatures": [
+          {
+            "featureName": "Stainless steel 1.4571",
+            "pricingRange": "5$",
+            "productionPriceRange": "4$",
+            "featureAlternativeName": "0Cr18Ni12MoTi|EN 316Ti|X6CrNiMoTi17-12-2",
+            "featureCharacter": "Corrosion-resistant, good machinability, note: not hardenable by heat treatment",
+            "featureUtility": "Used for manufacturing welded parts, etc."
+          },
+          {
+            "featureName": "Stainless steel 1.4301",
+            "pricingRange": "2$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "0Cr19Ni9|EN-X5CrNi18-10",
+            "featureCharacter": "Heat-resistant, corrosion-resistant, low-temperature resistant, good machinability",
+            "featureUtility": "Used for food equipment, general chemical equipment, nuclear industry, etc."
+          },
+          {
+            "featureName": "Stainless steel 316",
+            "pricingRange": "2$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "EN-X5CrNiMo17-12-2",
+            "featureCharacter": "Corrosion-resistant, high temperature resistant",
+            "featureUtility": "Used for bolts, nuts, underwater equipment, chemical, dye production equipment, etc."
+          },
+          {
+            "featureName": "Stainless steel 420",
+            "pricingRange": "2$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "EN-X20Cr13",
+            "featureCharacter": "Corrosion-resistant, high wear resistance, excellent machinability",
+            "featureUtility": "Used for chemical industry, food processing equipment, etc."
+          },
+          {
+            "featureName": "Stainless steel 430",
+            "pricingRange": "2$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "EN-X6Cr17",
+            "featureCharacter": "Corrosion-resistant, good thermal conductivity",
+            "featureUtility": "Used for fuel, burner components, household appliances, home appliance components"
+          },
+          {
+            "featureName": "Stainless steel 1.4841",
+            "pricingRange": "5$",
+            "productionPriceRange": "5$",
+            "featureAlternativeName": "EN-X6CrNiMoTi17-12-2",
+            "featureCharacter": "Non-magnetic, heat-resistant, good welding performance, good strength performance at 1150°C, good corrosion resistance at 650°C,",
+            "featureUtility": "Used for high-temperature equipment in the petroleum, natural gas, and chemical industries"
+          },
+          {
+            "featureName": "Stainless steel 1.4542",
+            "pricingRange": "3$",
+            "productionPriceRange": "4$",
+            "featureAlternativeName": "EN-X5CrNiCuNb16-4",
+            "featureCharacter": "Hardenable, corrosion-resistant, good hardness",
+            "featureUtility": "Used for manufacturing medical parts, general machinery, automotive instruments, etc."
+          },
+          {
+            "featureName": "Stainless steel 1.4404",
+            "pricingRange": "4$",
+            "productionPriceRange": "4$",
+            "featureAlternativeName": "EN-X2CrNiMo17-12-2",
+            "featureCharacter": "Corrosion resistant, good weldability",
+            "featureUtility": "Used in the chemical industry"
+          },
+
+          {
+            "featureName": "Stainless steel 1.4305",
+            "pricingRange": "3$",
+            "productionPriceRange": "2$",
+            "featureAlternativeName": "EN-X8CrNiS18-9",
+            "featureCharacter": "Non-magnetic, excellent machinability, note, low corrosion resistance and cannot be welded",
+            "featureUtility": "Used in machining"
+          },
+          {
+            "featureName": "Stainless steel 1.4112",
+            "pricingRange": "5$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "EN-X90CrMoV18",
+            "featureCharacter": "Can be magnetized, corrosion-resistant, excellent machinability",
+            "featureUtility": "Used for tool manufacturing, mechanical components, chemical equipment, medical device manufacturing, etc."
+          },
+          {
+            "featureName": "Stainless steel 1.4104",
+            "pricingRange": "5$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "EN-X14CrMoS17",
+            "featureCharacter": "Can be magnetized, corrosion-resistant, excellent machinability",
+            "featureUtility": "Used for manufacturing various machine parts"
+          },
+          {
+            "featureName": "Stainless steel 1.4057",
+            "pricingRange": "5$",
+            "productionPriceRange": "3$",
+            "featureAlternativeName": "EN-X17CrNi16-2",
+            "featureCharacter": "High strength, corrosion-resistant, good weldability",
+            "featureUtility": "Used for manufacturing high-strength, tough and corrosion-resistant components, and load-bearing components working in humid environments"
+          }
+        ],
+        "name": "stainless-steel"
+      },
+
+      {
+        "materialName": "Copper",
+        "materialFeatures": [
+          {
+            "featureName": "Cu-ETP CW004A (electrolytic tough pitch copper with oxygen refined)",
+            "pricingRange": "4",
+            "productionPriceRange": "2",
+            "featureAlternativeName": "DIN-ECu58",
+            "featureCharacter": "High conductivity, highly corrosion-resistant, excellent thermal conductivity",
+            "featureUtility": "Used for electrodes in spark erosion and connecting elements in battery systems"
+          },
+          {
+            "featureName": "CuSn12 CC483K (bronze)",
+            "pricingRange": "3",
+            "productionPriceRange": "2",
+            "featureAlternativeName": "DIN EN 1982-2008",
+            "featureCharacter": "Excellent sliding performance, highly corrosion-resistant, wear-resistant",
+            "featureUtility": "Used for machine tool spindle bearings, precision machine tools or components"
+          },
+          {
+            "featureName": "CuSn7Zn4Pb7 Rg7 (bronze)",
+            "pricingRange": "4",
+
+            "productionPriceRange": "1",
+            "featureAlternativeName": "EN 1982-2017",
+            "featureCharacter": "Excellent sliding performance, highly corrosion-resistant, excellent emergency operation performance, good machinability",
+            "featureUtility": "Used for sliding bearings and bearing linings in mechanical engineering"
+          },
+          {
+            "featureName": "CuSn8 CW453K (bronze)",
+            "pricingRange": "4",
+            "productionPriceRange": "3",
+            "featureAlternativeName": "DIN EN 12163-2016",
+            "featureCharacter": "Good sliding performance, highly corrosion-resistant, good spring performance, wear-resistant",
+            "featureUtility": "Used for manufacturing wear-resistant parts and structural parts under medium loads and medium sliding speeds"
+          },
+          {
+            "featureName": "CuZn39Pb3 Ms58 (bronze)",
+            "pricingRange": "3",
+            "productionPriceRange": "1",
+            "featureAlternativeName": "EN 12420-2014",
+            "featureCharacter": "Excellent sliding performance, highly corrosion-resistant, good machinability",
+            "featureUtility": "Used for machining, etc."
+          },
+          {
+            "featureName": "Brass H62",
+            "pricingRange": "1",
+            "productionPriceRange": "1",
+            "featureAlternativeName": "ISO CuZn40",
+            "featureCharacter": "High strength, high hardness, good plasticity",
+            "featureUtility": "Used for force parts manufactured by deep drawing and bending"
+          }
+        ],
+        "name": "copper"
+      },
+
+      {
+        "materialName": "Plastic",
+        "materialFeatures": [
+          {
+            "featureName": "PC Polycarbonate",
+            "pricingRange": "4",
+            "productionPriceRange": "--",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Excellent dimensional stability, good electrical insulation performance, good machinability, low water absorption, not suitable for sliding applications",
+            "featureUtility": "Used for manufacturing large lampshades, protective glass, left and right eyepiece barrels of optical instruments, etc."
+          },
+          {
+            "featureName": "POM Polyoxymethylene",
+            "pricingRange": "2",
+            "productionPriceRange": "--",
+            "featureAlternativeName": "none",
+            "featureCharacter": "Excellent mechanical performance, excellent sliding performance, good creep resistance, excellent machinability",
+            "featureUtility": "Used for dry friction applications"
+          }
+        ],
+        "name": "plastic"
+      },
+
+      {
+        "materialName": "Tool Steel",
+        "materialFeatures": [
+          {
+            "featureName": "1.173",
+            "featureAlternativeName": "C45U",
+            "pricingRange": "2",
+            "productionPriceRange": "1",
+            "featureCharacter": "Wear-resistant, good machinability",
+            "featureUtility": "Used for applications requiring a hard surface and tough core material"
+          },
+          {
+            "featureName": "1.2083",
+            "featureAlternativeName": "X40Cr14",
+            "pricingRange": "3",
+            "productionPriceRange": "4",
+            "featureCharacter": "Wear-resistant",
+            "featureUtility": "Used for manufacturing molds for corrosive plastics"
+          },
+          {
+            "featureName": "1.221",
+            "featureAlternativeName": "115CrV3",
+            "pricingRange": "4",
+            "productionPriceRange": "2",
+            "featureCharacter": "Easy to machine, wear-resistant, high strength, high hardness",
+            "featureUtility": "Used for components with high strength and hardness requirements"
+          },
+          {
+            "featureName": "1.2312",
+            "featureAlternativeName": "40CrMnMoS8-6",
+            "pricingRange": "3",
+            "productionPriceRange": "3",
+            "featureCharacter": "Good nitriding performance, good machinability, wear-resistant, Note: limited polishability and etchability",
+            "featureUtility": "Used for tool and mold manufacturing"
+          },
+          {
+            "featureName": "1.2379",
+            "featureAlternativeName": "X153CrMoV12",
+            "pricingRange": "4",
+            "productionPriceRange": "4",
+            "featureCharacter": "High wear resistance, high strength, high hardness",
+            "featureUtility": "Used for tool manufacturing"
+          },
+          {
+            "featureName": "1.2842",
+            "featureAlternativeName": "90MnCrV8",
+            "pricingRange": "3",
+            "productionPriceRange": "4",
+            "featureCharacter": "High wear resistance, high hardness",
+            "featureUtility": "Used for molds, stamping tools, wire drawing dies, knives, bushings, lathes, chuck jaws"
+          },
+          {
+            "featureName": "1.3505",
+            "featureAlternativeName": "100Cr6",
+            "pricingRange": "3",
+            "productionPriceRange": "3",
+            "featureCharacter": "High wear resistance, high hardness",
+            "featureUtility": "Used for parts in mechanical engineering prone to wear"
+          }
+        ],
+        "name": "tool"
+      },
+      {
+        "materialName": "Cast Iron",
+        "materialFeatures": [
+          {
+            "featureName": "Cast Iron 0.6025",
+            "featureAlternativeName": "EN-GJL-250",
+            "pricingRange": "4",
+            "productionPriceRange": "2",
+            "featureCharacter": "Good thermal conductivity, excellent wear resistance",
+            "featureUtility": "--"
+          }
+        ],
+        "name": "hierro"
+      }
+    ],
+    "finishingsInfo": [
+      {
+        "finishingName": "Spray coating",
+        "finishingFeatures": [
+          {
+            "featureName": "Powder spray painting",
+            "featureCharacter": " Excellent corrosion resistance,Aging resistance,Beautiful and diverse in color",
+            "featureUtility": "Spray powder coating onto the surface of the workpiece, and use the phenomenon of corona discharge to make the powder coating adhere to the workpiece, forming a powdery coating; The powdery coating undergoes high-temperature baking, leveling and solidification to form final coatings with different effects",
+            "name": "powder"
+          },
+          {
+            "featureName": "Fuel injection",
+            "featureCharacter": " Corrosion resistance , beautiful",
+            "featureUtility": "Pour the paint into a container, apply pressure with mechanical equipment, and spray the paint onto the product in a mist form to form a paint film",
+            "name": "fuel"
+          },
+
+          {
+            "featureName": "Spraying Teflon",
+            "featureCharacter": " Heat resistance , Insulation stability , Low friction",
+            "featureUtility": "Spray Teflon material is sprayed on a variety of substrate surfaces",
+            "name": "spraying"
+          }
+        ],
+        "name": "Spray"
+      },
+      {
+        "finishingName": "oxidation",
+        "finishingFeatures": [
+          {
+            "featureName": "anodic oxidation",
+            "featureCharacter": "  Corrosion resistance , Wear resistance , High hardness",
+            "featureUtility": "The treatment process of producing an oxide film on the surface of aluminum or aluminum alloy using electrolytic treatment, resulting in a thin film obtained through anodic oxidation treatment",
+            "name": "anodic"
+          },
+          {
+            "featureName": "Hard anodizing",
+            "featureCharacter": " Corrosion resistance , Wear resistance , High hardness , Hyperthermia",
+            "featureUtility": "The corresponding electrolyte of the alloy (such as sulfuric acid, chromic acid, oxalic acid, etc.) is used as the anode, and the electrolysis is carried out under certain conditions and the applied current",
+            "name": "hard-anodizing"
+          }
+        ],
+        "name": "oxidation"
+      },
+
+      {
+        "finishingName": "electroplating",
+        "finishingFeatures": [
+          {
+            "featureName": "Chromium plating",
+            "featureCharacter": "  Excellent corrosion resistance ,  beautiful ,  High hardness ,  Good high heat resistance",
+            "featureUtility": "In the chrome plating process, the workpiece acts as a cathode and is placed in an electrolyte containing chromate. When energized, the chromium ions in the electrolyte are reduced to metallic chromium on the surface of the cathode, which is deposited on the surface of the workpiece to form a chromium layer",
+            "name": "chromium"
+          },
+          {
+            "featureName": "galvanizing",
+            "featureCharacter": " Corrosion resistance , low cost , High hardness , High wear resistance",
+            "featureUtility": "Place the pre plated parts into a mechanically rotating drum, add water and impact medium (glass pellets), and the drum rotates to form a fluid environment with collision and rolling effects",
+            "name": "galvanizing"
+          },
+          {
+            "featureName": "Tin plating",
+            "featureCharacter": " A layer of metal tin is coated on the surface of the metal to isolate the air and protect the copper from external corrosion",
+            "name": "tin-plating"
+          },
+          {
+            "featureName": "nickel plating",
+            "featureCharacter": "  Corrosion resistance , Wear resistance",
+            "featureUtility": "Nickel plating is a process for electrolytic production of nickel coatings. It has good wear resistance, high corrosion resistance, and chemical resistance to alkali, acid, and gas",
+            "name": "nickel-plating"
+          }
+        ],
+        "name": "electroplating"
+      },
+
+      {
+        "finishingName": "Chemical surface treatment",
+        "finishingFeatures": [
+          {
+            "featureName": "Blackening",
+            "featureCharacter": "  Corrosion resistance , low cost , No size change , Not easy to peel off",
+            "featureUtility": "The use of chemical reactions to form a black protective film on the surface of the substrate has many advantages, such as endowing the substrate with rust prevention ability, low processing cost, no size change, and not easy to peel off",
+            "name": "blackening"
+          },
+          {
+            "featureName": "Phosphating",
+            "featureCharacter": "Corrosion resistance , beautiful , Improve the adhesion of the paint layer",
+            "featureUtility": "Provide a protective film on the metal surface to isolate it from air, prevent corrosion, and improve the adhesion and corrosion resistance of the paint layer",
+            "name": "phosphating"
+          }
+        ],
+        "name": "Chemical"
+      },
+      {
+        "finishingName": "Surface heat treatment",
+        "finishingFeatures": [
+          {
+            "featureName": "annealing",
+            "featureCharacter": " Improve plasticity , Improving cutting performance , Reduce hardness",
+            "featureUtility": "A heat treatment process in which a metal or alloy is heated to an appropriate temperature, kept warm for a certain period of time, and then slowly cooled (usually cooled with a furnace).",
+            "name": "annealing"
+          },
+          {
+            "featureName": "quenching",
+            "featureCharacter": "Wear resistance ,Improve hardness ,Increase intensity",
+            "featureUtility": "Quenching is the process of selectively altering and modifying the microstructure to increase the mechanical resistance of turning and milling parts.",
+            "name": "quenching"
+          },
+          {
+            "featureName": "nitriding",
+            "featureCharacter": "Improving resilience , Increase intensity , Improve corrosion resistance performance , Wear resistance",
+            "featureUtility": "Place the workpiece into a sealed container, pass through flowing ammonia gas and heat it. After a long period of insulation, the ammonia gas decomposes to produce active nitrogen atoms, which continuously adsorb onto the surface of the workpiece and diffuse into the surface of the workpiece, thereby changing the chemical composition and structure of the surface layer and achieving excellent surface performance.",
+            "name": "nitriding"
+          },
+          {
+            "featureName": "tempering",
+            "featureCharacter": " Improving resilience , Reduce hardness , Improve organizational stability",
+            "featureUtility": "This is a metal heat treatment process in which the quenched workpiece is reheated to an appropriate temperature below the lower critical temperature Ac1 (the starting temperature at which the pearlite converts to austenite when heated), and then cooled in air or water, oil and other media after holding it for a period of time.",
+            "name": "tempering"
+          },
+          {
+            "featureName": "Carbon nitrogen co infiltration",
+            "featureCharacter": "  Improving resilience,  Increase intensity,  Improve corrosion resistance performance,  Wear resistance",
+            "featureUtility": "Carbonitriding is a thermochemical surface quenching process, and its subsequent quenching steps are similar to surface quenching. During this process, the surface layer of the material is also rich in nitrogen. The temperature of carbon nitrogen co infiltration is lower than the temperature used in surface hardening. This reduces the risk of distortion. Can achieve higher surface hardness, especially for non-alloy steel and low alloy steel",
+            "name": "carbon-nitrogen"
+          }
+        ],
+        "name": "Surface"
+      },
+      {
+        "finishingName": "other",
+        "finishingFeatures": [
+          {
+            "featureName": "polishing",
+            "featureCharacter": "Black colored size ,accuracy ,Improve corrosion resistance performance ,beautiful",
+            "featureUtility": "Polishing is a chemical surface treatment used to form a weak protective layer on the surface of black metals. Polishing is not a coating. Due to chemical processes, the material will turn black",
+            "name": "polishing"
+          },
+          {
+            "featureName": "Electrolytic polishing",
+            "featureCharacter": " Capable of polishing complex parts , efficient , Improve corrosion resistance performance",
+            "featureUtility": "The polished workpiece is used as the anode, the insoluble metal is the cathode, and the two poles are immersed in the electrolytic cell at the same time, and the selective anode dissolution is generated by direct current, so as to achieve the effect of increasing the brightness of the workpiece surface.",
+            "name": "electrolytic"
+          },
+          {
+            "featureName": "Silk screen printing",
+            "featureCharacter": " Low cost , efficient , Suitable for mass production with low precision",
+            "featureUtility": "The pattern engraved on the steel plate is transferred to the workpiece through the role of the rubber head, and the ink permeates from the mesh of the screen plate to the product through the pressure of the rubber scraper to form the pattern.",
+            "name": "silk-screen"
+          },
+
+          {
+            "featureName": "Laser carving",
+            "featureCharacter": "Fast marking speed , beautiful , Never wear out , High speed and speed , low cost",
+            "featureUtility": "Using a high-intensity focused laser beam emitted by a laser at the focal point to oxidize the material and process it",
+            "name": "laser"
+          },
+          {
+            "featureName": "Sandblasting",
+            "featureCharacter": "Surface strengthening ,beautiful ,high efficiency",
+            "featureUtility": "Sandblasting uses compressed air as the power to form a high-speed jet beam, which sprays abrasive at high speed onto the surface of the workpiece to be treated, causing physical changes to the outer surface of the workpiece",
+            "name": "sandblasting"
+          },
+          {
+            "featureName": "wire drawing",
+            "featureCharacter": " Surface strengthening , high strength , Corrosion resistance , smooth surface",
+            "featureUtility": "A method of improving the surface smoothness of a workpiece by using the reciprocating motion of a drawn cloth strip and rubbing it back and forth on the surface of the workpiece, with a linear texture on the surface",
+            "name": "wire"
+          }
+        ],
+        "name": "Surface"
+      }
+    ],
+    "finishingsInfo_ch": [
+      {
+        "finishingName": "喷涂",
+        "finishingFeatures": [
+          {
+            "featureName": "喷粉",
+            "featureCharacter": "优异的耐腐蚀性，耐老化性，色彩美观多样",
+            "featureUtility": "将粉末涂料喷涂到工件表面，并利用静电放电现象使粉末涂层附着在工件上，形成粉末涂层；粉末涂层经过高温烘烤、水平化和固化，形成具有不同效果的最终涂层",
+            "name": "powder"
+          },
+          {
+            "featureName": "喷油",
+            "featureCharacter": "耐腐蚀性，美观",
+            "featureUtility": "将油漆倒入容器，用机械设备施加压力，将油漆以雾状喷射到产品上，形成油漆膜",
+            "name": "fuel"
+          },
+          {
+            "featureName": "喷涂特氟龙",
+            "featureCharacter": "耐热性，绝缘稳定性，低摩擦",
+            "featureUtility": "将粉末状的特氟龙材料喷涂在各种基材表面上",
+            "name": "spraying"
+          }
+        ],
+        "name": "喷涂"
+      },
+      {
+        "finishingName": "氧化",
+        "finishingFeatures": [
+          {
+            "featureName": "阳极氧化",
+            "featureCharacter": "耐腐蚀性，耐磨性，高硬度",
+            "featureUtility": "通过电解处理在铝或铝合金表面生成氧化膜的处理工艺，经过阳极氧化处理得到薄膜",
+            "name": "anodic"
+          },
+          {
+            "featureName": "硬质阳极氧化",
+            "featureCharacter": "耐腐蚀性，耐磨性，高硬度，高温",
+            "featureUtility": "把合金相应的电解质（如硫酸，铬酸，草酸等）作为阳极，在一定条件下和外加电流进行电解",
+            "name": "hard-anodizing"
+          }
+        ],
+        "name": "氧化"
+      },
+      {
+        "finishingName": "电镀",
+        "finishingFeatures": [
+          {
+            "featureName": "镀铬",
+            "featureCharacter": "优异的耐腐蚀性，美观，高硬度，良好的高耐热性",
+            "featureUtility": "在镀铬过程中，工件作为阴极，被放置在含有铬酸盐的电解液中。通电情况下，电解液中的铬离子在阴极表面还原成金属铬，沉积在工件表面形成铬层",
+            "name": "chromium"
+          },
+          {
+            "featureName": "镀锌",
+            "featureCharacter": "耐腐蚀性，低成本，高硬度，高耐磨性",
+            "featureUtility": "将经过镀前处理的零件放入机械转动的滚筒中，加入水和冲击介质（玻璃丸），滚筒转动形成一个具有碰撞和搓碾作用的流态环境",
+            "name": "galvanizing"
+          },
+          {
+            "featureName": "镀锡",
+            "featureCharacter": "耐腐蚀性，耐色",
+            "featureUtility": "在金属表面镀上一层金属锡，用于隔绝空气，保护铜材不会受外界的腐蚀",
+            "name": "tin-plating"
+          },
+          {
+            "featureName": "镀镍",
+            "featureCharacter": "耐腐蚀性，耐磨性",
+            "featureUtility": "镀镍是一种通过电解生产镍涂层的工艺。具有良好的耐磨性、高耐腐蚀性，对碱、酸和气体具有化学抗性",
+            "name": "nickel-plating"
+          }
+        ],
+        "name": "电镀"
+      },
+      {
+        "finishingName": "化学表面处理",
+        "finishingFeatures": [
+          {
+            "featureName": "发黑",
+            "featureCharacter": "耐腐蚀性，低成本，无尺寸变化，不易剥落",
+            "featureUtility": "利用化学反应在基体表面形成黑色保护膜的方法，具有诸多优点，如赋予基体防锈能力、加工成本低、不改变尺寸、不易剥落",
+            "name": "blackening"
+          },
+          {
+            "featureName": "磷化",
+            "featureCharacter": "耐腐蚀性，美观，提高油漆层的附着力",
+            "featureUtility": "在金属表面提供一层保护膜，与空气隔离，防止腐蚀，提高油漆层的附着力和耐腐蚀性",
+            "name": "phosphating"
+          }
+        ],
+        "name": "化学"
+      },
+      {
+        "finishingName": "表面热处理",
+        "finishingFeatures": [
+          {
+            "featureName": "退火",
+            "featureCharacter": "提高塑性，提高切削性能，降低硬度",
+            "featureUtility": "将金属或合金 加热到适当温度，保温一定时间，然后缓慢冷却 （一般为随炉冷却）的热处理工艺",
+            "name": "annealing"
+          },
+          {
+            "featureName": "淬火",
+            "featureCharacter": "耐磨性，提高硬度，增强强度",
+            "featureUtility": "淬火是通过选择性地改变和改造微观结构来增加车削和铣削零件的机械阻力",
+            "name": "quenching"
+          },
+          {
+            "featureName": "回火",
+            "featureCharacter": "提高韧性、降低硬度、提高组织稳定性",
+            "featureUtility": "将经过淬火的工件重新加热到低于下临界温度Ac1(加热时珠光体向奥氏体转变的开始温度)的适当温度，保温一段时间后在空气或水、油等介质中冷却的金属热处理工艺",
+            "name": "nitriding"
+          },
+          {
+            "featureName": "渗氮",
+            "featureCharacter": "提高弹性，增加强度，提高耐腐蚀性能，耐磨性",
+            "featureUtility": "将工件置于密封容器中，通入流动氨气并加热。经过长时间保温，氨气分解产生活性氮原子，连续吸附到工件的表面并扩散到工件表面，从而改变表层的化学组成和结构，实现优异的表面性能",
+            "name": "tempering"
+          },
+          {
+            "featureName": "碳氮共渗",
+            "featureCharacter": "提高弹性，增加强度，提高耐腐蚀性能，耐磨性",
+            "featureUtility": "碳氮共浸渗是一种热化学表面淬火过程，其后续淬火步骤类似于表面淬火。在此过程中，材料表层也富含氮元素。碳氮共浸渗的温度比用于表面硬化的温度低。这减少了变形的风险。可以实现更高的表面硬度，特别适用于非合金钢和低合金钢",
+            "name": "carbon-nitrogen"
+          }
+        ],
+        "name": "表面热处理"
+      },
+      {
+        "finishingName": "其他",
+        "finishingFeatures": [
+          {
+            "featureName": "抛光",
+            "featureCharacter": "黑色尺寸，精度，提高耐腐蚀性能，美观",
+            "featureUtility": "抛光是一种化学表面处理，用于在黑色金属表面形成一层薄弱的保护层。抛光不是一种涂层。由于化学过程，材料将变为黑色",
+            "name": "polishing"
+          },
+          {
+            "featureName": "电解抛光",
+            "featureCharacter": "能够抛光复杂部件，高效，提高耐腐蚀性能",
+            "featureUtility": "将被抛光工件作为阳极，不溶性金属为阴极，两极同时浸入到电解槽中，通以直流电而产生有选择性的阳极溶解，从而达到工件表面光亮度增大的效果",
+            "name": "electrolytic"
+          },
+          {
+            "featureName": "丝印",
+            "featureCharacter": "低成本，高效率，适用于低精度的大批量生产",
+            "featureUtility": "通过胶头的作用将刻在钢板上的图案转移到工件上，通过胶刮的压力将油墨从网版的网孔中渗透到产品上，形成图案",
+            "name": "silk-screen"
+          },
+          {
+            "featureName": "镭雕",
+            "featureCharacter": "标记速度快，美观，永不磨损，快速速度，低成本",
+            "featureUtility": "使用激光器在焦点处发射的高强度聚焦激光束氧化材料并对其进行加工",
+            "name": "laser"
+          },
+          {
+            "featureName": "喷砂",
+            "featureCharacter": "表面强化，美观，高效",
+            "featureUtility": "喷砂利用压缩空气作为动力形成高速喷射束，将研磨材料以高速喷射到待处理工件表面，造成工件外表面的物理改变",
+            "name": "sandblasting"
+          },
+          {
+            "featureName": "拉丝",
+            "featureCharacter": "表面强化，高强度，耐腐蚀性，平滑表面",
+            "featureUtility": "采用拉丝的布条往复运动，在工件表面来回摩擦使工件表面光洁度提高，表面纹理呈直线状",
+            "name": "wire"
+          }
+        ],
+        "name": "其他"
       }
     ]
   }

@@ -2,7 +2,7 @@ import { ServiceModel } from "../Model/service.js";
 import bcrypt from "bcrypt";
 import readFile from "../service/service.js";
 
-const { data } = readFile("../mock/info-mock.json");
+const { data: dataInfo } = readFile("../mock/info-mock.json");
 import {
   validateUserSignin,
   validateUserlogin,
@@ -191,19 +191,30 @@ export class ServiceController {
     return res.download(filePath);
   } //DONE
   static async GetData(req, res) {
-    const { materials } = req.query;
+    const { data, lang } = req.query;
 
-    if (materials === "true") {
-      const { materialsInfo } = data;
+    if (data === "material") {
+      if (lang === "ch") {
+        const { materialsInfo } = dataInfo;
+        return res.status(200).send(materialsInfo);
+      }
 
-      const newData = materialsInfo.map((data) => {
-        return data;
-      });
-      console.log(newData);
-      return res.status(200).send(newData);
+      const { materialsInfo_en } = dataInfo;
+
+      return res.status(200).send(materialsInfo_en);
     }
-    console.log(data);
-    return res.status(200).json(data);
+    if (data === "finishing") {
+      if (lang === "ch") {
+        const { finishingsInfo_ch } = dataInfo;
+        return res.status(200).send(finishingsInfo_ch);
+      }
+      const { finishingsInfo } = dataInfo;
+
+      return res.status(200).send(finishingsInfo);
+    }
+
+    console.log(dataInfo);
+    return res.status(200).json({ dataInfo });
   }
   static async GetOrders(req, res) {
     const { id } = req.query;

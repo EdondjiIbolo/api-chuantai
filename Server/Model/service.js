@@ -1,14 +1,18 @@
 import "dotenv/config";
+import fs from "node:fs";
 import mysql from "mysql2/promise";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-console.log(process.env.MYSQLPASSWORD);
+console.log(typeof process.env.MYSQLPASSWORD, process.env.MYSQLUSER);
 const config = {
   host: process.env.MYSQLHOST,
   user: process.env.MYSQLUSER,
   password: process.env.MYSQLPASSWORD,
   port: process.env.DB_PORT,
   database: process.env.MYSQLDATABASE,
+  ssl: {
+    ca: fs.readFileSync("./Server/ca.pem"),
+  },
 };
 
 const connection = await mysql.createConnection(config);
@@ -36,25 +40,25 @@ export class ServiceModel {
       }
 
       const [userData, _] = await connection.query(
-        "SELECT * FROM usuarios WHERE telefono = ?",
+        "SELECT * FROM usuarios WHERE phone = ?",
         [phone]
       );
       const [data] = userData;
 
-      const userPhone = data?.telefono;
+      const userPhone = data?.phone;
       if (!userPhone) {
         return false;
         // return res.status(400).json({
-        //   message: "No se ha encontrado un usuarion con este Numero de telefono",
+        //   message: "No se ha encontrado un usuarion con este Numero de phone",
         // });
       }
       const changePassword = await connection.query(
-        "UPDATE  usuarios SET contrasena = ? WHERE telefono = ?",
+        "UPDATE  usuarios SET password = ? WHERE phone = ?",
         [password, phone]
       );
       const userForToken = {
         id: data.id,
-        password: data.contrasena,
+        password: data.password,
       };
       const token = jwt.sign(userForToken, "1234", { expiresIn: "3d" });
       const userDataToken = {
@@ -72,14 +76,14 @@ export class ServiceModel {
   static async logInUser({ phone, password }) {
     try {
       const [querdata, _] = await connection.query(
-        "SELECT telefono, contrasena FROM usuarios WHERE telefono = ? AND contrasena = ?",
+        "SELECT phone, password FROM usuarios WHERE phone = ? AND password = ?",
         [phone, password]
       );
 
       const response = await querdata;
 
       const userInfo = await connection.query(
-        "SELECT * FROM usuarios WHERE telefono = ?",
+        "SELECT * FROM usuarios WHERE phone = ?",
         [phone]
       );
 
@@ -132,7 +136,7 @@ export class ServiceModel {
 
       //    Revisar si el usuario ya existe en la base de datos.
       const [isUserExist, tableInfo] = await connection.query(
-        "SELECT * FROM usuarios WHERE telefono = ?",
+        "SELECT * FROM usuarios WHERE phone = ?",
         [phone]
       );
 
@@ -153,7 +157,7 @@ export class ServiceModel {
       };
 
       const insertdata = await connection.query(
-        "INSERT INTO usuarios (id, nombre, apellido, email, contrasena, rol_id,telefono) VALUES (?,?,?,?,?,?,?)",
+        "INSERT INTO usuarios (id, nombre, apellido, email, password, rol_id,phone) VALUES (?,?,?,?,?,?,?)",
         [id, name, username, email, password, rol, phone]
       );
       const userForToken = {
@@ -223,7 +227,7 @@ export class ServiceModel {
         const [{ id }] = searchId;
 
         const [quotes, _] = await connection.query(
-          "SELECT quotations.*, usuarios.nombre , usuarios.telefono FROM quotations JOIN usuarios ON usuarios.id  = ? AND status= ? ORDER BY quotations.quotation_date ASC",
+          "SELECT quotations.*, usuarios.nombre , usuarios.phone FROM quotations JOIN usuarios ON usuarios.id  = ? AND status= ? ORDER BY quotations.quotation_date ASC",
           [id, status]
         );
         return quotes;
@@ -241,7 +245,7 @@ export class ServiceModel {
       const [{ id }] = searchId;
 
       const [quotes, _] = await connection.query(
-        "SELECT quotations.*, usuarios.nombre , usuarios.telefono FROM quotations JOIN usuarios ON usuarios.id  = ? ORDER BY quotations.quotation_date ASC",
+        "SELECT quotations.*, usuarios.nombre , usuarios.phone FROM quotations JOIN usuarios ON usuarios.id  = ? ORDER BY quotations.quotation_date ASC",
         [id]
       );
       return quotes;
@@ -253,7 +257,7 @@ export class ServiceModel {
   static async Assistantquote() {
     try {
       const [quotes, _] = await connection.query(
-        "SELECT quotations.*, usuarios.nombre , usuarios.telefono FROM quotations JOIN usuarios ON usuarios.id  = quotations.user_id ORDER BY quotations.quotation_date ASC"
+        "SELECT quotations.*, usuarios.nombre , usuarios.phone FROM quotations JOIN usuarios ON usuarios.id  = quotations.user_id ORDER BY quotations.quotation_date ASC"
       );
       return { quotes };
     } catch (err) {
@@ -359,7 +363,7 @@ export class ServiceModel {
       const { id: userId } = getUser;
 
       const [getOrders, b] = await connection.query(
-        "SELECT quotations.*, usuarios.nombre , usuarios.telefono FROM quotations JOIN usuarios WHERE status = 'ordered' AND usuarios.id = ?",
+        "SELECT quotations.*, usuarios.nombre , usuarios.phone FROM quotations JOIN usuarios WHERE status = 'ordered' AND usuarios.id = ?",
         [userId]
       );
 
@@ -377,7 +381,7 @@ export class ServiceModel {
       const { id: userId } = getUser;
 
       const [getOrders, b] = await connection.query(
-        "SELECT quotations.*, usuarios.nombre , usuarios.telefono FROM quotations JOIN usuarios ON usuarios.id  = ?  AND status = 'ordered'",
+        "SELECT quotations.*, usuarios.nombre , usuarios.phone FROM quotations JOIN usuarios ON usuarios.id  = ?  AND status = 'ordered'",
         [userId]
       );
       // const [getOrders, b] = await connection.query(
