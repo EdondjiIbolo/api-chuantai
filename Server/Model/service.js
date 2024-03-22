@@ -129,8 +129,7 @@ export class ServiceModel {
       });
 
       if (!codeValidate[0]) {
-        console.log("El código no es válido");
-        return false;
+        throw new error("El código no es válido");
       }
 
       //    Revisar si el usuario ya existe en la base de datos.
@@ -141,7 +140,7 @@ export class ServiceModel {
 
       //Verificar si el usuario ya existe para enviar un enviar un error
       if (isUserExist[0]) {
-        return res.status(400).json({ message: "El usuario ya existe" });
+        throw new error("El usuario ya existe");
       }
       // si el suario no existe crearle una nueva cuenta y enviar el token
       const id = crypto.randomUUID();
@@ -156,9 +155,12 @@ export class ServiceModel {
       };
 
       const insertdata = await connection.query(
-        "INSERT INTO usuarios (id, nombre, apellido, email, password, rol_id,phone) VALUES (?,?,?,?,?,?,?)",
+        "INSERT INTO usuarios (id, name, surename, email, password, rol_id,phone) VALUES (?,?,?,?,?,?,?)",
         [id, name, username, email, password, rol, phone]
       );
+      if (!insertdata) {
+        throw new error("Error al crear la cuenta");
+      }
       const userForToken = {
         id: user.id,
         password: user.password,
