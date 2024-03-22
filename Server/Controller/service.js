@@ -95,6 +95,7 @@ export class ServiceController {
     const saltRounds = 10;
     const myPlaintextPassword = otpCode;
     const salt = bcrypt.genSaltSync(saltRounds);
+    console.log(otpCode);
     const encriptedCode = bcrypt.hashSync(myPlaintextPassword, salt);
     const result = await ServiceModel.SendVerificationCode({
       encriptedCode,
