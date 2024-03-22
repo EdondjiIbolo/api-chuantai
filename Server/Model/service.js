@@ -192,9 +192,10 @@ export class ServiceModel {
   }
   static async SendVerificationCode({ encriptedCode, phone }) {
     try {
+      const tokenId = crypto.randomUUID();
       const insertdata = await connection.query(
-        "INSERT INTO tokens (phone, codigo , fecha ) VALUES (?,? , NOW())",
-        [phone, encriptedCode]
+        "INSERT INTO tokens (token_id , phone, codigo , fecha ) VALUES (?,?,? , NOW())",
+        [tokenId, phone, encriptedCode]
       );
       if (!insertdata) {
         throw new error("Error al almacenar el codigo de verificacion");
