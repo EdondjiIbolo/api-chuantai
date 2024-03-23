@@ -23,7 +23,7 @@ export class ServiceController {
   static async recoverPassword(req, res) {
     const validateData = validateUserlogin(req.body);
     if (validateData.error) {
-      return res.status(400).json({ error: validateData.error.message });
+      return res.status(400).json({ message: validateData.error.message });
     }
     const { phone, password, verifyCode } = validateData.data;
     const result = await ServiceModel.recoverPassword({
@@ -31,13 +31,16 @@ export class ServiceController {
       password,
       verifyCode,
     });
-    if (!result) {
+
+    if (result.err) {
       return res.status(400).json({
         message: "Error Codigo invalido o numero incorrecto",
       });
     }
-    console.log(result);
-    return res.status(200).json(result);
+
+    return res
+      .status(200)
+      .json({ message: "Password have changed successfully" });
   }
   static async logInUser(req, res) {
     const validateData = validateUserlogin(req.body);
@@ -47,11 +50,11 @@ export class ServiceController {
     const { phone, password } = validateData.data;
     const data = await ServiceModel.logInUser({ phone, password });
 
-    if (data) return res.status(200).json(data);
+    if (data.token) return res.status(200).json(data);
     return res.status(401).json({
       error: "invalid user or password",
     });
-  }
+  } //DONE
   static async signAccountUser(req, res) {
     // validar
     const validateData = validateUserSignin(req.body);
@@ -123,14 +126,21 @@ export class ServiceController {
   } //DONE
   static async Sendquote(req, res) {
     const validateData = validateQuotationScheme(req.body);
+
+    if (validateData.error) {
+      return res.status(400).json({ error: "Todos los campos son requeridos" });
+    }
+
     const { data } = validateData;
     const result = await ServiceModel.Sendquote({ data });
 
     if (!result) {
       return res.status(400).json({ error: "Error al crear el quote" });
     }
-
-    return res.status(201).json({ message: "QUOTED CREATED SUCCESSFULLY" });
+    console.log(result);
+    return res
+      .status(200)
+      .json({ message: "QUOTED CREATED SUCCESSFULLY", ...result });
   } //DONE
   static async Newquote(req, res, next) {
     const { email } = req.body;

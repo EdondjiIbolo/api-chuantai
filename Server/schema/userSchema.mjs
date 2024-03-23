@@ -20,7 +20,7 @@ const userScheme = z.object({
     nvalid_type_error: "phone must be a number",
     required_error: "phone is required",
   }),
-  rol: z.number().int().default(2),
+  rol: z.number().int().default(3),
   verifyCode: z.string(),
 });
 const quotingScheme = z.object({
@@ -68,7 +68,18 @@ const quotationScheme = z.object({
     invalid_type_error: "Quotation_id must be a string",
     required_error: "Quotation_id is required",
   }),
-  quantity: z.string(),
+  address: z.string({
+    invalid_type_error: "address must be a string",
+    required_error: "address is required",
+  }),
+  shipping_date: z.string({
+    invalid_type_error: "shipping_date must be a string",
+    required_error: "shipping_date is required",
+  }),
+  quantity: z.string({
+    invalid_type_error: "quantity must be a string",
+    required_error: "quantity is required",
+  }),
 });
 const sendMessageScheme = z.object({
   name: z.string({
