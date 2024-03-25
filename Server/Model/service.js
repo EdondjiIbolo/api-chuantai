@@ -4,7 +4,6 @@ import mysql from "mysql2/promise";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
-console.log(typeof process.env.MYSQLPASSWORD, process.env.MYSQLUSER);
 const config = {
   host: process.env.MYSQLHOST,
   user: process.env.MYSQLUSER,
@@ -75,11 +74,13 @@ export class ServiceModel {
     }
   }
   static async logInUser({ phone, password }) {
+    console.log("hola");
     try {
       const [querdata, _] = await connection.query(
         "SELECT phone, password FROM usuarios WHERE phone = ? AND password = ?",
         [phone, password]
       );
+      console.log(querdata);
       const response = await querdata;
       if (response.length <= 0) {
         throw new Error("Wrong password or telephone number");
